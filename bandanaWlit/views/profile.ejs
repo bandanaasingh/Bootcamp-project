@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <p>Welcome to my world></p>
+
+    <h1><%= person.name %></h1>
+    <table border="3" class="table table-striped">
+    <tr> 
+    <th>Name:</th>
+    <th>College:</th>
+    <th>Course:</th>
+    <th>Semester</th>
+    <th>Contact Number:</th>
+    <th>Facebook link:</th>
+    <th>Profile Picture:</th>
+    </tr>
+
+
+    <tr> 
+    <th><%=person.name%></th>
+    <th><%=person.college%></th>
+    <th><%=person.course%></th>
+    <th><%=person.semester%></th>
+    <th><%=person.contactno%></th>
+    <th><a href="www.facebook.com"><%=person.fblink%></th>
+    <th><img src="<%=person.img%>"></th>
+    </tr>
+
+</table>
+</body>
+</html>
